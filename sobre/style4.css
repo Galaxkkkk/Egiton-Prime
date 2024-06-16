@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    color: #fff;
+    background-image: url(../img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav.menu-lateral{
+    width: 80px;
+    height: 100%;
+    background-color: #191d22;
+    padding: 140px 0 140px 1%;
+    box-shadow: 3px 0 0 #fbee17;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+
+    transition: 2s;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu:hover{
+    background: #fbee17;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+ul li.item-menu{
+    transition: 1s;
+    border-radius: 5px;
+}
+
+ul li.item-menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a:hover{
+    color: #191d22;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 40px;
+}
+
+ul li.item-menu a .icon i{
+    font-size: 40px;
+    margin-left: 5px;
+
+}
+
+section{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  margin: 100px;
+  padding: 20px;
+}
+
+
+section .video{
+  background-color: #191d22;
+  border-radius: 20px;
+  max-width: 350px;
+  padding: 20px;
+  margin: 20px;
+  text-decoration: wavy;
+}
+
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	animation: spinz 1.35s linear infinite;
+	width: 100%;
+	height: 100%;
+	/* background-color: #ffffff; */
+	background-color: #1b1b1b;       /* Change the background color here */
+	z-index: 100;
+  }
+  
+  .loader {
+	border: 16px solid #efeee8;
+	border-top: 16px solid #ffee00;  /* Change the preloader color here */
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	animation: spin 1.35s linear infinite;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -60px;
+	margin-left: -60px;
+  }
+
+  @keyframes spin {
+	0% {
+	  transform: rotate(0deg);
+	  opacity:1;
+	}
+	50% {
+	  transform: rotate(360deg);
+	  opacity:1;
+	}
+	75% {
+	  opacity:1;
+	  transform: rotate(180deg);
+	}
+	100% {
+	  transform: rotate(0deg);
+	  opacity:0;
+	}
+  }
+  
+  @keyframes spinz {
+	0% {
+	  opacity:1;
+	}
+	50% {
+	  opacity:1;
+	}
+	75% {
+	  opacity:1;
+	}
+	100% {
+	  opacity:0;
+	}
+  }
