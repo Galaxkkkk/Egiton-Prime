@@ -13,6 +13,7 @@ body{
     background-attachment: fixed;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -73,22 +74,40 @@ ul li.item-menu a .icon i{
 }
 
 section{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  align-items: center;
-  justify-content: center;
-  margin: 100px;
+  width: 500px;
+  background-color: #191d22;
   padding: 20px;
+  margin-top: 200px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.502);
+  color: #fff;
+  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
-
-section .video{
+.agaum{
+  width: 200px;
+  margin-top: 100px;
   background-color: #191d22;
-  border-radius: 20px;
-  max-width: 350px;
   padding: 20px;
-  margin: 20px;
-  text-decoration: wavy;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.502);
+  color: #fff;
+  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .preloader {
